@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">PracticeDrawImitation</string>
     <string name="flipboard_view">flipboard_view</string>
+    <string name="jike_view">jike_view</string>
 </resources>
