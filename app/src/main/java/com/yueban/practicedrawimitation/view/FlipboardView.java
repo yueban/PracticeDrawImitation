@@ -98,8 +98,8 @@ public class FlipboardView extends View {
   }
 
   @Override
-  public void dispatchFinishTemporaryDetach() {
-    super.dispatchFinishTemporaryDetach();
+  protected void onDetachedFromWindow() {
+    super.onDetachedFromWindow();
     //mAnimatorSet.end();
     mAnimator.end();
   }

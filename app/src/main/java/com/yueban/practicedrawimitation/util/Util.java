@@ -2,6 +2,7 @@ package com.yueban.practicedrawimitation.util;
 
 import android.content.Context;
 import android.support.annotation.IntDef;
+import android.util.TypedValue;
 import android.view.View;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -16,11 +17,15 @@ public class Util {
     throw new AssertionError("no instance.");
   }
 
-  public static int dp2px(Context context, int dpValue) {
-    return (int) context.getResources().getDisplayMetrics().density * dpValue;
+  public static int dp2px(Context context, float dpValue) {
+    return (int) (context.getResources().getDisplayMetrics().density * dpValue);
   }
 
-  public static int px2dp(Context context, int pxValue) {
+  public static int sp2px(Context context, float spValue) {
+    return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, spValue, context.getResources().getDisplayMetrics());
+  }
+
+  public static int px2dp(Context context, float pxValue) {
     return (int) (pxValue / context.getResources().getDisplayMetrics().density);
   }
 
