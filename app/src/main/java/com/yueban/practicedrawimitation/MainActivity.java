@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     mPageModels.add(new PageModel(R.layout.layout_flipboard, getString(R.string.flipboard_view)));
     mPageModels.add(new PageModel(R.layout.layout_jike, getString(R.string.jike_view)));
     mPageModels.add(new PageModel(R.layout.layout_mint, getString(R.string.mint_view)));
+    mPageModels.add(new PageModel(R.layout.layout_mi_sport, getString(R.string.mi_sport_view)));
 
     mViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
       @Override
@@ -43,6 +44,6 @@ public class MainActivity extends AppCompatActivity {
       }
     });
     mTabLayout.setupWithViewPager(mViewPager);
-    mViewPager.setCurrentItem(2);
+    mViewPager.setCurrentItem(3);
   }
 }

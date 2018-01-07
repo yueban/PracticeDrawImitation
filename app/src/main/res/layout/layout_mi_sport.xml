@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#4D9BE4">
 
-    <com.yueban.practicedrawimitation.view.MintView
+    <com.yueban.practicedrawimitation.view.MiSportView
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </FrameLayout>
